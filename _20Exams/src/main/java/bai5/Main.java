@@ -21,9 +21,10 @@ public class Main {
         }else {
             System.out.printf("Phần tử thuộc đoạn [%d;%d]: \n", x, y);
             for (int i = 0; i <subArr.length;i++) {
-                System.out.println(subArr[i] + "\t");
+                System.out.print(subArr[i] + "\t");
             }
         }
+
 
     }
     public static int[] getElement(int[] array, int x, int y) {
