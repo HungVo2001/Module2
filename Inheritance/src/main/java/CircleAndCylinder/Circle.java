@@ -32,7 +32,10 @@ public class Circle {
         return " A Circle with radius = "
                 + getRadius()
                 + " and "
-                + getColor();
+                + getColor()
+                + " and "
+                + getArea();
+
     }
 
 }
