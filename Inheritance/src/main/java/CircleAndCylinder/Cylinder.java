@@ -27,7 +27,7 @@ public class Cylinder extends Circle{
     public String toString() {
         return "A Cylinder with radius = "
                 + getHeight()
-                + " and thể tich = "
+                + " and thể tich hình trụ là = "
                 + getVolumeCylinder();
     }
 }
