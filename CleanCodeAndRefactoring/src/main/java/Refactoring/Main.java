@@ -5,5 +5,8 @@ public class Main {
 
       int result =  Calculator.calculator(4,0,'/');
         System.out.println("Kết quả là: " + result);
+
+        System.out.println("---------------------");
+
     }
 }
