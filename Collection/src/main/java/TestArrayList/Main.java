@@ -10,8 +10,8 @@ public class Main {
         list.add(1, "Demo1");
         list.add(2, "Demo2");
 
-
-//        list.clear();    //Xóa Danh Sách
+        System.out.println(list);
+        list.clear();    //Xóa Danh Sách
 
         System.out.println("List add(): " + list.toString());   //In ra danh saách add
 
