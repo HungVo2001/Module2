@@ -1,17 +1,15 @@
-package FindMaxWriteFile;
+package ReadAndWriteFile;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-public class ReadAndWriteFile {
+public class ReadAndWriteFileS {
     public static Scanner sc = new Scanner(System.in);
     public void findMaxInFile (){
 //        List<Integer> numbers = new ArrayList<>();
         do {
             try {
-                String path = "C:\\codegym\\numbers1.txt" ;
+                String path = "C:\\codegym\\Module2\\IO_Binary\\src\\main\\java\\data\\ReadFileMax.txt";
                 File file = new File(path);
                 if (!file.exists()){
                     throw new FileNotFoundException();
@@ -41,10 +39,10 @@ public class ReadAndWriteFile {
     public void writeFile(int max){
 
         try {
-            String paths = "C:\\codegym\\numbersMax.txt" ;
+            String paths = "C:\\codegym\\Module2\\IO_Binary\\src\\main\\java\\data\\Maxx.txt";
             FileWriter fileWriter = new FileWriter(paths,true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write("Max là: " + max);
+            bufferedWriter.write("Max là: " + max + "\n");
             bufferedWriter.close();
             System.out.println("Ghi file thành công tại đường dẫn !!" + paths);
         }catch (Exception e){

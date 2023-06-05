@@ -11,9 +11,10 @@ public class ReadFileExample {
         Scanner sc = new Scanner(System.in);
         do {
             try {
+                String path = "C:\\codegym\\Module2\\IO_Binary\\src\\main\\java\\data\\Sum.txt";
                 System.out.println("Nhập đường dẫn file");
                 //Đọc file theo đường dẫn
-                File file = new File(sc.nextLine());
+                File file = new File(path);
 
                 // Kiểm tra nếu file không tồn tại thì ném ra ngoại lệ.
                 if (!file.exists()){
