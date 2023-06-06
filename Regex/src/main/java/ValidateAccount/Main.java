@@ -1,21 +1,19 @@
 package ValidateAccount;
 
-import ValidateEmail.EmailExample;
-
 public class Main {
-    public static AAA emailExample;
-    public static final String[] validEmail = new String[]{"a@gmail.com", "ab@yahoo.com", "abc@hotmail.com"};
-    public static final String[] invalidEmail = new String[]{"@gmail.com", "ab@gmail.", "@#abc@gmail.com"};
+    public static AccountExample accountExample;
+    public static final String[] validAccount = new String[]{"123abc_", "_abc123", "______", "123456", "abcdefgh"};
+    public static final String[] invalidAccount = new String[]{".@", "12345", "1234_", "abcde"};
 
     public static void main(String[] args) {
-        emailExample = new AAA();
-        for (String email : validEmail){
-            boolean ivalid = emailExample.validate(email);
-            System.out.println("Email is " + email + " is valid : " + ivalid);
+        accountExample = new AccountExample();
+        for (String account: validAccount){
+            boolean isValid = accountExample.validate(account);
+            System.out.println("Account is " + account + " is valid " + isValid);
         }
-        for (String email : invalidEmail){
-            boolean ivalid = emailExample.validate(email);
-            System.out.println("Email is " + email + " is invalid : " + ivalid);
+        for (String account: invalidAccount){
+            boolean isValid = accountExample.validate(account);
+            System.out.println("Account is " + account + " in valid " + isValid);
         }
     }
 }

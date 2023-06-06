@@ -8,12 +8,12 @@ public class Main {
     public static void main(String[] args) {
         emailExample = new EmailExample();
         for (String email : validEmail){
-            boolean ivalid = emailExample.validate(email);
-            System.out.println("Email is " + email + " is valid : " + ivalid);
+            boolean isValid = emailExample.validate(email);
+            System.out.println("Email is " + email + " is valid : " + isValid);
         }
         for (String email : invalidEmail){
-            boolean ivalid = emailExample.validate(email);
-            System.out.println("Email is " + email + " is invalid : " + ivalid);
+            boolean isValid = emailExample.validate(email);
+            System.out.println("Email is " + email + " is invalid : " + isValid);
         }
     }
 }
