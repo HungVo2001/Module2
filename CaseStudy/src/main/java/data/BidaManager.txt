@@ -1,0 +1,2 @@
+805,Bàn 01,Trống,Chưa xóa,Dãy A01,20000.0
+745,Bàn Vip2,Đang chơi,Chưa xóa,Khu Vip,30000.0
